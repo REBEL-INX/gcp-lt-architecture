@@ -10,21 +10,3 @@ resource "google_compute_network" "main" {
   delete_default_routes_on_create = false
 
 }
-
-resource "google_compute_network" "prod1" {
-  name                            = "prod1"
-  routing_mode                    = "REGIONAL"
-  auto_create_subnetworks         = false
-  mtu                             = 1460
-  delete_default_routes_on_create = false
-
-}
-
-# resource "google_compute_network" "dev" {
-#   name                            = "dev"
-#   routing_mode                    = "REGIONAL"
-#   auto_create_subnetworks         = false
-#   mtu                             = 1460
-#   delete_default_routes_on_create = false
-
-# }

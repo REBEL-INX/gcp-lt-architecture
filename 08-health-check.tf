@@ -1,6 +1,6 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_region_health_check
 # Resource: Regional Health Check
-resource "google_compute_region_health_check" "app" {
+resource "google_compute_health_check" "app" {
   name                = "app-hc"
   check_interval_sec  = 5
   timeout_sec         = 5
